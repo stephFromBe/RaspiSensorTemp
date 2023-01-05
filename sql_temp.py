@@ -39,8 +39,8 @@ def insertDB( temperature,IDs):
  #   logger.error(e)
 
 # Get readings from sensors and store them in MySQL
- temperature = []
- IDs = []
+  temperature = []
+  IDs = []
 
 for filename in os.listdir("/sys/bus/w1/devices"):
   if fnmatch.fnmatch(filename, '28-*'):
